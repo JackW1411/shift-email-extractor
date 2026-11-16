@@ -15,7 +15,14 @@ Please reply to confirm.
 
 Regards,
 Dana""",
-        "expected": "TODO",
+        "expected": {
+            "pharmacy": "Marlow Street Pharmacy",
+            "shift_date": "2026-11-27",
+            "start_time": "09:00",
+            "end_time": "17:30",
+            "role": "pharmacist",
+            "rate": 62.0,
+        },
     },
     {
         "id": "missing_rate",
@@ -27,7 +34,14 @@ Hi all, hope the week's going well. We've had a tech call in sick for next Thurs
 Cheers,
 Priya
 Bayside Community Pharmacy""",
-        "expected": "TODO",
+        "expected": {
+            "pharmacy": "Bayside Community Pharmacy",
+            "shift_date": "2026-12-03",
+            "start_time": "08:30",
+            "end_time": "18:00",
+            "role": "dispensary tech",
+            "rate": None,
+        },
     },
     {
         "id": "loose_date",
@@ -38,6 +52,13 @@ Hey, any chance you can cover this Saturday, 9 til 1? Pharmacist please. We can 
 
 Thanks,
 Oakridge Pharmacy""",
-        "expected": "TODO",
+        "expected": {
+            "pharmacy": "Oakridge Pharmacy",
+            "shift_date": "2026-11-21",
+            "start_time": "09:00",
+            "end_time": "13:00",
+            "role": "pharmacist",
+            "rate": 70.0,
+        },
     },
 ]
